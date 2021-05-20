@@ -1,0 +1,10 @@
+{% extends 'Logger/base.html' %}
+
+{% block content %}
+<ul>
+{% for log in logs %}
+    <li>{{log}}</li>
+{% endfor %}
+</ul>
+
+{% endblock %}

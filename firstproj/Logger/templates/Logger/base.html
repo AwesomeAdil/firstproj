@@ -1,0 +1,32 @@
+{# Load the tag Library #}
+{% load bootstrap4 %}
+
+{# Load CSS and JavaScript #}
+{% bootstrap_css %}
+{% bootstrap_javascript jquery='full' %}
+{% load static %}
+
+{# Display django.contrib.messages as Bootstrap alerts #} 
+{% bootstrap_messages %} 
+
+<head>
+    <link rel="stylesheet" href="{% static 'css/Logger.css' %}">
+</head>
+
+
+<body>
+    <header class="page-header">
+      <div class="container">
+          <h1><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjnxuTSiNbwAhVEOs0KHUa_C5EQyCkwAnoECAQQAw&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DdQw4w9WgXcQ&usg=AOvVaw0aHtehaphMhOCAkCydRLZU">LoGgErS</a></h1>
+      </div>
+    </header>
+    <main class="container">
+        <div class="row">
+            <div class="col">
+            {% block content %}
+            {% endblock %}
+            </div>
+        </div>
+    </main>
+</body>
+\
